@@ -1,4 +1,4 @@
-FROM arm32v7/node:10.14.2
+FROM balenalib/rpi-node:10.15.3
 
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION 1.1.8
