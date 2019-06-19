@@ -1,4 +1,4 @@
-version: "3.7"
+version: "2"
 
 volumes:
   xbs-db-data:
@@ -10,7 +10,7 @@ services:
       - "MONGO_INITDB_DATABASE=xbrowsersync"
       - "MONGO_INITDB_ROOT_PASSWORD=$XBS_DB_PASSWORD"
       - "MONGO_INITDB_ROOT_USERNAME=$XBS_DB_USERNAME"
-    image: "mongo:4.0.4"
+    image: "andresvidal/rpi3-mongodb3"
     labels:
       - "traefik.enable=false"
     networks:
