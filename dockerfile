@@ -1,4 +1,4 @@
-FROM balenalib/rpi-node:10.15.3
+FROM balenalib/rpi-node:10.15.3-stretch
 
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION 1.1.8
