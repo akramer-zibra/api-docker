@@ -1,4 +1,4 @@
-FROM node:10.14.2-alpine
+FROM arm32v7/node:10.14.2
 
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION 1.1.8
