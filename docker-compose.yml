@@ -26,7 +26,9 @@ services:
     environment:
       - "XBROWSERSYNC_DB_PWD=$XBS_DB_PASSWORD"
       - "XBROWSERSYNC_DB_USER=$XBS_DB_USERNAME"
-    image: "xbrowsersync/api:1.1.6"
+    build:
+      context: .
+      dockerfile: dockerfile
     labels:
       - "traefik.frontend.rule=Host:$XBS_API_HOSTNAME"
       - "traefik.port=8080"
